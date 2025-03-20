@@ -7,12 +7,49 @@
 </head>
 <body>
 
-<p id="answer"></p>
-
-<form>
-    <input type="text" id="guess" placeholder="guess">
-    <button id="btnSubmit">Submit</button>
-</form>
+<div class="container">
+    <p id="answer"></p>
+    <form id="form">
+        <input type="text" id="guess" placeholder="guess">
+        <button id="btnSubmit">Submit</button>
+    </form>
+</div>
 
 </body>
+<style>
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(60, 255, 0);
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(40, 40, 40);
+    }
+
+    p {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    input, button {
+        padding: 10px;
+        color: #000000;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #answer {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
 </html>
